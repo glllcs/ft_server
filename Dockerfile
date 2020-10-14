@@ -1,7 +1,9 @@
 FROM debian:buster
+LABEL maintainer="lambrozi@student.42sp.org.br"
 
-RUN apt-get update
-RUN apt-get upgrade -y
-RUN apt-get -y install wget
-RUN apt-get -y install nginx
-
+RUN apt-get update && \
+	apt-get upgrade -y && \
+	apt-get install -y wget \
+	nginx \
+	mariadb-server \
+	php7.3 \
