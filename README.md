@@ -104,3 +104,8 @@ starts a MySQL container and attach it in the network and defines a few environm
 
 `CMD` specifies the defacult command to run when starting a container from this image
 
+## References
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
+
+
