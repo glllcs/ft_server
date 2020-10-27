@@ -21,9 +21,14 @@
 docker build -t getting-started .
 ```
 uses a Dockerfile to build a new container image
-
 - `-t` tags the image - its human-readable name
 - `.` position of the Dockerfile in the current directory
+
+
+```
+docker rmi -f $(docker images -a -q)
+```
+removes all images
 
 ```
 docker run -d -p 80:80 docker/getting-started
@@ -53,6 +58,11 @@ removes a container, and the port can me used again
 docker rm -f <the-container-id>
 ```
 forces a container to remove, without stoping it before
+
+```
+docker rm -f $(docker ps -a -q)
+```
+delete all containers
 
 ```
 docker login -u USER-NAME
