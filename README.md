@@ -1,3 +1,18 @@
+# ft_server
+
+The purpose of this project is to create a Docker container that runs Wordpress, phpMyAdmin and MariaDB.
+
+## Requirements
+
+To run the container, you must have Docker installed in your machine.
+
+## Instalation
+
+´´´
+docker build -t LEMP .
+docker run -it -p 80:80 -p 443:443 LEMP
+´´´
+
 # Docker
 
 ## Theory
@@ -90,7 +105,7 @@ docker run -dp 3000:3000 \
 - `-w /app` sets the "working directory" or the current directory that the command will run from
 - `-v "$(pwd):/app"` bind mount the current directory from the host in the container into the `/app` directory
 - `node:12-alpine` the image to use. Note that this is the base image for our app from the Dockerfile
-- `sh -c "yarn install && yarn run dev" the command
+- `sh -c "yarn install && yarn run dev"` the command
 
 ```
 docker logs -f <container-id>
@@ -114,8 +129,8 @@ starts a MySQL container and attach it in the network and defines a few environm
 
 `CMD` specifies the defacult command to run when starting a container from this image
 
-## References
+# References
 
-https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10
+[LEMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10) [LEMP2](https://www.binarytides.com/install-nginx-php-fpm-mariadb-debian/) [Nginx](http://nginx.org/en/docs/beginners_guide.html) [Nginx2](https://www.nginx.com/resources/wiki/start/topics/recipes/wordpress/) [SSL](https://linuxize.com/post/creating-a-self-signed-ssl-certificate/) [phpMyAdmin](https://www.itzgeek.com/how-tos/linux/debian/how-to-install-phpmyadmin-with-nginx-on-debian-10.html) [phpMyAdmin2](https://www.digitalocean.com/community/tutorials/how-to-install-phpmyadmin-from-source-debian-10)
 
 
