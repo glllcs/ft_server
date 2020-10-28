@@ -8,10 +8,10 @@ To run the container, you must have Docker installed in your machine.
 
 ## Instalation
 
-´´´
+```
 docker build -t LEMP .
 docker run -it -p 80:80 -p 443:443 LEMP
-´´´
+```
 
 # Docker
 
