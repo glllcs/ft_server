@@ -2,6 +2,7 @@
 mkdir -p /var/www/localhost
 mv /temp/nginx.conf /etc/nginx/sites-available/localhost
 ln -s /etc/nginx/sites-available/localhost /etc/nginx/sites-enabled/
+mv /temp/autoindex.sh /root/
 
 # configure php
 cd temp
@@ -22,8 +23,8 @@ mariadb
 echo "CREATE DATABASE db_user42;" | mysql -u root --skip-password
 echo "GRANT ALL PRIVILEGES ON db_user42.* TO 'user42'@'localhost' IDENTIFIED BY 'user42' WITH GRANT OPTION;" | mysql -u root --skip-password
 echo "FLUSH PRIVILEGES;" | mysql -u root --skip-password
-echo "update mysql.user set plugin='' where user='root';" | mysql -u root --skip-password
-echo "SHOW DATABASES;" | mysql -u root --skip-password
+echo "UPDATE mysql.user SET plugin='' WHERE user='root';"
+
 echo "exit"
 
 # SSL Certificate setting
