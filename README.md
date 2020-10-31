@@ -18,4 +18,5 @@ docker run -it -p 80:80 -p 443:443 LEMP
 
 [LEMP](https://www.digitalocean.com/community/tutorials/how-to-install-linux-nginx-mariadb-php-lemp-stack-on-debian-10) [LEMP2](https://www.binarytides.com/install-nginx-php-fpm-mariadb-debian/) [Nginx](http://nginx.org/en/docs/beginners_guide.html) [Nginx2](https://www.nginx.com/resources/wiki/start/topics/recipes/wordpress/) [SSL](https://linuxize.com/post/creating-a-self-signed-ssl-certificate/) [phpMyAdmin](https://www.itzgeek.com/how-tos/linux/debian/how-to-install-phpmyadmin-with-nginx-on-debian-10.html) [phpMyAdmin2](https://www.digitalocean.com/community/tutorials/how-to-install-phpmyadmin-from-source-debian-10)
 
-![ft_server-universe](/others/ft_server.png)
+
+![ft_server-universe](../assets/ft_server.png?raw=true)
